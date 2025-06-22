@@ -3,7 +3,7 @@ import java.util.Comparator;
 
 public class SearchAlgorithms {
 
-    // Linear Search: O(n)
+    
     public static Product linearSearch(Product[] products, int targetId) {
         for (Product product : products) {
             if (product.productId == targetId) {
@@ -13,7 +13,7 @@ public class SearchAlgorithms {
         return null;
     }
 
-    // Binary Search: O(log n)
+  
     public static Product binarySearch(Product[] products, int targetId) {
         int left = 0;
         int right = products.length - 1;
@@ -31,7 +31,7 @@ public class SearchAlgorithms {
         return null;
     }
 
-    // Helper to sort products by ID
+
     public static void sortProductsById(Product[] products) {
         Arrays.sort(products, Comparator.comparingInt(p -> p.productId));
     }
